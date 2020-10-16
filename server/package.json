@@ -15,9 +15,11 @@
   "license": "ISC",
   "devDependencies": {},
   "dependencies": {
+    "@babel/cli": "^7.10.5",
     "@babel/core": "^7.2.2",
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
+    "babel-polyfill": "^6.26.0",
     "nodemon": "^1.18.9",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
