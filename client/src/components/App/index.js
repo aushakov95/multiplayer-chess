@@ -4,7 +4,6 @@ import Board from "../Board";
 import Lobby from "../Lobby";
 import { SocketContext } from "../Socket";
 import GameContext from "../Game";
-import { Link } from "antd";
 import "./App.css";
 
 const App = () => {

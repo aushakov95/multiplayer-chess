@@ -1,7 +1,7 @@
 import io from "socket.io-client";
 
 const Socket = () => {
-  return io("http://10.0.1.19:9000");
+  return io(process.env.SERVER_URL || "http://10.0.1.19:9000");
 };
 
 export default Socket;
