@@ -6,16 +6,14 @@ import socketio from "socket.io";
 
 const app = express();
 app.use(cors());
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
 
 const activeGames = {};
 const users = {};
 
 app.use("/todos", routes.todos);
 
-const server = app.listen(9000, () =>
-  console.log(`👂 Checkers server listening on port 9000`)
+const server = app.listen(process.env.PORT, () =>
+  console.log(`👂 Chess server listening on port ${process.env.PORT}`)
 );
 
 const io = socketio.listen(server);
