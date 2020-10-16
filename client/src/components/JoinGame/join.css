@@ -1,0 +1,13 @@
+.join {
+  margin-top: 1em;
+}
+
+#join-button {
+  border-radius: 0 !important;
+  width: 100% !important;
+}
+
+#join-input {
+  border-radius: 0 !important;
+  width: 100% !important;
+}

@@ -1,0 +1,9 @@
+@import "~antd/dist/antd.css";
+
+.made-by {
+  margin: 0 auto;
+}
+
+.App {
+  text-align: center;
+}

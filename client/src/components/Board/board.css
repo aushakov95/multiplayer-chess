@@ -1,0 +1,19 @@
+.chessboard {
+  text-align: center;
+}
+
+.chessboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+  height: 100%;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.resign-button {
+  float: left;
+  margin-bottom: 1em;
+}
