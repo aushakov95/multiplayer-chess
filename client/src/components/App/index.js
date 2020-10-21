@@ -21,8 +21,6 @@ const App = () => {
       localStorage.setItem("userId", uuid());
     }
 
-    socket.emit("login", localStorage.getItem("userId"));
-
     socket.on("startGame", (game) => {
       const userId = localStorage.getItem("userId");
       console.log(game);
