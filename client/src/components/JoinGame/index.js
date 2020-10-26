@@ -7,16 +7,20 @@ import "./join.css";
 const JoinGame = () => {
   const socket = useContext(SocketContext);
   const [gameId, setGameId] = useState("");
+  const [isLoading, setLoading] = useState(false);
   const { gameInfo, setGameInfo } = useContext(GameContext);
 
   useEffect(() => {
+    setLoading(false);
     socket.on("joinError", (msg) => {
       alert(msg);
       setGameInfo({ ...gameInfo, id: "" });
+      setLoading(false);
     });
   }, []);
 
   const joinGame = () => {
+    setLoading(true);
     socket.emit("joinGame", {
       gameId,
       userId: localStorage.getItem("userId"),
@@ -45,6 +49,7 @@ const JoinGame = () => {
             size="large"
             onClick={joinGame}
             id="join-button"
+            loading={isLoading}
           >
             Join Game
           </Button>
