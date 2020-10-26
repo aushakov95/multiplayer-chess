@@ -1,5 +1,3 @@
-[![Heroku App Status](http://heroku-shields.herokuapp.com/chess-by-andrei-client)](https://chess-by-andrei-client.herokuapp.com)
-
 # Multiplayer Chess ♟
 
 > “Of chess, it has been said that life is not long enough for it, but that is the fault of life, not chess.” – William Napier
